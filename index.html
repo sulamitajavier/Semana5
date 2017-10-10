@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Poeta frustrado </title>
+<link href="css/reset.css" rel="Stylesheet" type="text/css">
+<link href="css/stylesheet.css" rel="Stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Averia+Serif+Libre|Cutive+Mono|Nixie+One" rel="stylesheet">
+<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<script src="https://use.fontawesome.com/5b4c8081e2.js"></script>
+
+
+
+
+</head>
+
+
+<body>
+	
+
+<header> </header>
+
+<!-- NAV -->
+
+<div class="menu" id="mimenu">
+  
+  <a href="#galeria">POETA FRUSTRADO</a>
+
+
+  
+ 
+  </div>
+<div class="men">
+<ul>
+      <li class="active">
+        <a class="nav-link" href="#"> <h4> Inicio </h4> </a>
+      </li>
+      <li>
+        <a class="nav-link" href="#"> <h4> Descubre </h4></a>
+      </li>
+      <li>
+        <a class="nav-link" href="#"> <h4> Inspiración </h4></a>
+      </li>
+      
+      </ul>
+</div>
+  
+
+ <div class="perfil"> 
+ 
+  <h4> MI CUENTA: @anónimo355 </h4> <a href="#"> <h6>cerrar sesión </h6> </a>
+  </div>
+
+
+
+
+
+
+
+<h1> ¡Desahógate anónimamente! </h1>
+
+<!-- Contenedor de el Satus Box -->
+		<div class="container">
+      <form>
+        <div class="form-group">
+          <textarea class="form-control status-box" rows="2" placeholder="¿Cómo te sientes el día de hoy?"></textarea>
+        </div>
+      </form>
+      <div class="button-group pull-right">
+        <p class="counter">Máx. 140 caracteres</p> <br>
+        <a href="#" class="btn btn-primary" style="margin-left: 45%;color: black; font-size: 1.5em; font-family: 'Cutive Mono', monospace; text-decoration: none;">  Publicar  </a>
+      </div>
+    
+      <ul class="posts">
+      </ul>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    
+
+
+
+<!-- Contenedor de las tres fotos -->
+<div class="fotos">
+  <a href="#">
+    <img src="img/m.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc"> <h4> ¿No sabes sobre que escribir? </h4> <br>
+<button> ¡INSPIRATE! </button>
+
+  </div>
+</div>
+
+<div class="fotos">
+  <a href="#">
+    <img src="img/1.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc"> <h4> ¿Curiosidad de que han escrito los demás? </h4> <br>
+<button> ¡DESCUBRE! </button>
+
+  </div>
+</div>
+
+<div class="fotos">
+  <a href="#">
+    <img src="img/2.jpg" alt="Forest" width="600" height="400">
+  </a>
+  <div class="desc"> <h4> ¿Recuerdas los poemas que te han gustado? </h4> <br>
+<button> ¡INSPIRATE! </button>
+
+  </div>
+</div>
+
+<!-- Contenedor h1 -->
+<div class="an"> <h1> Preguntas frecuentes </h1> </div> <br>
+<a href="#"> <div class="pre">
+
+
+<!-- Contenedor de las preguntas con JavaS. -->
+  <script type="text/javascript">
+
+ var imlocation = "img/";
+ var currentdate = 0;
+ var image_number = 0;
+ function ImageArray (n) {
+   this.length = n;
+   for (var i =1; i <= n; i++) {
+     this[i] = ' '
+   }
+ }
+ image = new ImageArray(3)
+ image[0] = 'q1.jpg'
+ image[1] = 'q3.jpg'
+ image[2] = 'q2.jpg'
+ var rand = 60/image.length
+ function randomimage() {
+  currentdate = new Date()
+  image_number = currentdate.getSeconds()
+  image_number = Math.floor(image_number/rand)
+  return(image[image_number])
+ }
+ document.write("<img src='" + imlocation + randomimage()+ "'>");
+//-->
+</script>
+
+     
+
+</div> </a>
+
+
+<!--Footer -->
+
+<footer> <hr> <h3> <br> © Poeta Frustrado, Inc. 2017 </h3> <pre>
+
+ <h3> <i class="fa fa-envelope" aria-hidden="true" style="font-size:15px;color:white;"></i> info@poetafrustrado.com </h3> 
+
+<hr>
+
+
+    
+
+</body>
+
+</html>
